@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.raleway-thin {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.raleway-light {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-medium {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.raleway-black {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.raleway-thin-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.raleway-light-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.raleway-regular-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.raleway-medium-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.raleway-bold-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.raleway-black-italic {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

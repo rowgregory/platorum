@@ -2,15 +2,18 @@
 
 import React from 'react'
 import useCountdown from '@/app/hooks/useCountdown'
+import { useScroll } from '../ScrollProvider'
 
 const UpcomingEvent = () => {
-  const targetDate = new Date('2024-12-25T00:00:00')
+  const scrollToTarget = useScroll()
+  const targetDate = new Date('2024-12-13T20:00:00-0500')
   const { days, hours, minutes, seconds } = useCountdown(targetDate)
 
   return (
     <div
+      onClick={() => scrollToTarget && scrollToTarget('events', 100)}
       data-aos="zoom-in"
-      className="px-4 -mt-4 350:-mt-48 z-10 max-w-screen-xl w-full mx-auto relative initial-flip-position"
+      className="px-4 -mt-4 350:-mt-48 z-10 max-w-screen-xl w-full mx-auto relative initial-flip-position cursor-pointer"
     >
       <div className="p-7 lg:p-12 bg-zinc-800/20 backdrop-blur-xl">
         <div className="grid grid-cols-12 gap-y-7 lg:gap-x-16 items-center">

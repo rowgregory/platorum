@@ -1,5 +1,8 @@
-import { ourServices } from '@/public/data/home.data'
+'use client'
+
 import React from 'react'
+import { ourServices } from '@/public/data/home.data'
+import { Tilt } from 'react-tilt'
 
 const WhatWeOffer = () => {
   return (
@@ -29,23 +32,28 @@ const WhatWeOffer = () => {
             Offering expert music business consulting, tour support, concert planning, A&R services,
             and fundraising to help artists achieve success.
           </h3>
-          <div className="grid grid-cols-12 gap-y-5 sm:gap-x-5 relative z-10">
+          <div className="grid grid-cols-12 gap-y-5 sm:gap-x-5 relative z-50">
             {ourServices.map((service, i) => (
-              <div
-                data-aos="fade-up"
-                data-aos-delay={i * 100}
+              <Tilt
+                options={{ scale: 1 }}
                 key={i}
-                className="flex justify-end flex-col p-6 col-span-12 sm:col-span-6 lg:col-span-3 bg-cover bg-center bg-no-repeat w-full aspect-square lg:aspect-[2/3]"
-                style={{ backgroundImage: `url(${service.img})` }}
+                className="col-span-12 sm:col-span-6 lg:col-span-3"
               >
-                <div className="text-2xl raleway-bold mb-2">{service.title}</div>
-                <div className="raleway-regular mb-10">{service.text}</div>
-              </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay={i * 100}
+                  className="p-6 flex justify-end flex-col bg-cover bg-center bg-no-repeat w-full aspect-square lg:aspect-[2/3]"
+                  style={{ backgroundImage: `url(${service.img})` }}
+                >
+                  <div className="text-2xl raleway-bold mb-2">{service.title}</div>
+                  <div className="raleway-regular mb-10">{service.text}</div>
+                </div>
+              </Tilt>
             ))}
           </div>
         </div>
       </div>
-      <div className="hidden sm:block bg-bottom-fade w-full h-[400px] absolute bottom-0 left-0 z-40" />
+      <div className="hidden sm:block bg-bottom-fade w-full h-[400px] absolute bottom-0 left-0" />
     </div>
   )
 }

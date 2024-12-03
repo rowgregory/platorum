@@ -24,7 +24,7 @@ export const ourServices = [
   },
   {
     title: "Event Organization",
-    img: "/images/event-organization.png",
+    img: "/images/event-org.png",
     text: "Seamless planning for impactful events tailored to your unique needs.",
   },
   {
@@ -95,7 +95,24 @@ export const ourStory = [
   },
 ];
 
-export const events = [
+export const upcomingEvents = [
+  {
+    date: "13 December 2024",
+    monthDay: "12/13",
+    year: "2024",
+    eventTitle: "Old School House and Soul Party",
+    artist: "Garcon SuperSlice Pizza Pie Parlor",
+    ticketPrice: "Public Event",
+    doorsOpen: "8:00 PM - 11:30 PM",
+    eventStatus: "UPCOMING",
+    venue: "14 New Derby St, Salem, MA 01970-3602, United States",
+    img: "/images/cakewalk.png",
+    description:
+      "Join us for an old school house and soul party featuring pizza, salad, dessert, CAKE, beer, wine, hard cider, and locally made art and holiday gifts for sale. More details to be announced soon!",
+  },
+];
+
+export const pastEvents = [
   {
     date: "09 November 2024",
     monthDay: "11/09",

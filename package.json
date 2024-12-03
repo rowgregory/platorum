@@ -1,6 +1,6 @@
 {
   "name": "platorum",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,7 +18,8 @@
     "next": "14.2.15",
     "next-sitemap": "^4.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-tilt": "^1.0.2"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

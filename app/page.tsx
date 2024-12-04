@@ -9,6 +9,7 @@ import OurStory from './components/home/OurStory'
 import OurEvents from './components/home/OurEvents'
 import Footer from './components/Footer'
 import UpcomingEvent from './components/home/UpcomingEvent'
+import JoeZippo from './components/home/JoeZippo'
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
       <AdditionalServices />
       <OurStory />
       <OurEvents />
-      <FadedDivider />
+      <JoeZippo />
+      <div className="w-full h-60 bg-gradient-to-b from-black to-transparent absolute"></div>
       <Footer />
     </div>
   )

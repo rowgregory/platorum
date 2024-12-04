@@ -10,11 +10,11 @@ const Header = () => {
     <div className="w-full absolute flex flex-col items-center justify-center py-4 z-40 left-1/2 transform -translate-x-1/2">
       <div
         data-aos="slide-down"
-        className="bg-logo bg-contain bg-no-repeat w-60 sm:w-80 h-[60px] ml-6"
+        className="bg-logo bg-contain bg-no-repeat w-[300px] h-[60px]"
       ></div>
-      <div className="flex items-center gap-x-4">
+      <div className="flex items-center justify-center gap-y-1 gap-x-4 flex-wrap">
         <button
-          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500 duration-100"
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
           data-aos="slide-right"
           onClick={() => {
             if (scrollToTarget) {
@@ -25,7 +25,7 @@ const Header = () => {
           Services
         </button>
         <button
-          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500 duration-100"
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
           data-aos="slide-right"
           onClick={() => {
             if (scrollToTarget) {
@@ -36,8 +36,8 @@ const Header = () => {
           About
         </button>
         <button
-          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500 duration-100"
-          data-aos="slide-up"
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
+          data-aos="slide-right"
           onClick={() => {
             if (scrollToTarget) {
               scrollToTarget('options', 100)
@@ -47,7 +47,7 @@ const Header = () => {
           Options
         </button>
         <button
-          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500 duration-100"
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
           data-aos="slide-left"
           onClick={() => {
             if (scrollToTarget) {
@@ -58,7 +58,7 @@ const Header = () => {
           Story
         </button>
         <button
-          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500 duration-100"
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
           data-aos="slide-left"
           onClick={() => {
             if (scrollToTarget) {
@@ -67,6 +67,17 @@ const Header = () => {
           }}
         >
           Events
+        </button>
+        <button
+          className="initial-slide-position text-sm text-zinc-100 raleway-regular hover:text-pink-500"
+          data-aos="slide-left"
+          onClick={() => {
+            if (scrollToTarget) {
+              scrollToTarget('zippo', 100)
+            }
+          }}
+        >
+          Zippo
         </button>
       </div>
     </div>

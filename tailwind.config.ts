@@ -22,6 +22,11 @@ export default {
         "our-story": `url('/images/our-story.png')`,
         footer: `url('/images/footer.png')`,
         logo: `url('/images/logo.png')`,
+        jz: `url('/images/joezippo.png')`,
+        jz1: `url('/images/jz-1.JPG')`,
+        jz2: `url('/images/jz-2.JPG')`,
+        jz3: `url('/images/jz-3.jpg')`,
+        jz4: `url('/images/jz-4.jpg')`,
       },
       keyframes: {
         squareIn: {

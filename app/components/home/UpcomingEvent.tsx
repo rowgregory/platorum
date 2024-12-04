@@ -13,7 +13,7 @@ const UpcomingEvent = () => {
     <div
       onClick={() => scrollToTarget && scrollToTarget('events', 100)}
       data-aos="zoom-in"
-      className="px-4 -mt-4 350:-mt-48 z-10 max-w-screen-xl w-full mx-auto relative initial-flip-position cursor-pointer"
+      className="px-4 -mt-20 350:-mt-48 z-10 max-w-screen-xl w-full mx-auto relative initial-flip-position cursor-pointer"
     >
       <div className="p-7 lg:p-12 bg-zinc-800/20 backdrop-blur-xl">
         <div className="grid grid-cols-12 gap-y-7 lg:gap-x-16 items-center">

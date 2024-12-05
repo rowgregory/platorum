@@ -3,7 +3,7 @@
 import React from 'react'
 import { Tilt } from 'react-tilt'
 
-const charityEvents = ['bg-jz1', 'bg-jz2', 'bg-jz3', 'bg-jz4']
+const charityEvents = ['bg-jz1', 'bg-jz2', 'bg-jz3', 'bg-jz4', 'bg-jz5', 'bg-jz6']
 
 const JoeZippo = () => {
   return (
@@ -39,10 +39,14 @@ const JoeZippo = () => {
             </p>
             <div className="grid grid-cols-12 gap-3 w-full">
               {charityEvents.map((event, i) => (
-                <Tilt options={{ scale: 1 }} key={i} className="col-span-12 sm:col-span-6">
+                <Tilt
+                  options={{ scale: 1 }}
+                  key={i}
+                  className="col-span-12 sm:col-span-6 md:col-span-4"
+                >
                   <div
                     data-aos="fade-up"
-                    data-aos-delay={i * 100}
+                    data-aos-delay={i * 50}
                     className="aspect-square bg-black py-2"
                   >
                     <div

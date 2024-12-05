@@ -27,6 +27,8 @@ export default {
         jz2: `url('/images/jz-2.JPG')`,
         jz3: `url('/images/jz-3.jpg')`,
         jz4: `url('/images/jz-4.jpg')`,
+        jz5: `url('/images/jz-5.jpg')`,
+        jz6: `url('/images/jz-6.jpg')`,
       },
       keyframes: {
         squareIn: {
